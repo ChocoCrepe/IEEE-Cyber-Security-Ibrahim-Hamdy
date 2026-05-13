@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8"/>
+</head>
+<body>
+
+  <form action="test.py" method="post">
+
+    <label>Username:</label><br>
+    <input type="text" name="username" placeholder="Enter your username" required><br>
+    <hr>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" placeholder="Enter a strong password"><br>
+    <hr>
+
+    <label>Mobile:</label><br>
+    <input type="tel" name="mobile" placeholder="+20100 (234) 123" pattern="\+\d{5}\s\(\d{3}\)\s\d{3}"><br>
+    <hr>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="example@mail.com" required><br>
+    <hr>
+
+    <label>Subject:</label><br>
+    <input type="text" name="subject" placeholder="Write the subject here"><br>
+    <hr>
+
+    <input type="hidden" name="secret" value="123">
+
+    <input type="reset" value="Empty Form">
+    <input type="submit" value="Send Data">
+
+  </form>
+
+</body>
+</html>
